@@ -1,0 +1,80 @@
+.room-solution {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 60px;
+}
+.room-solution .content{
+  left: 20px;
+  top: 22%;
+  width: 38%;
+  padding: min(60px,2vw) 30px 100px;
+  z-index: 1;
+  height: min(432px,38vw);
+  background-color: var(--bg-color);
+}
+.room-solution .content .prometha {
+  font-size: 21px;
+  color: var(--blue);
+}
+.room-solution .content .title {
+  font-weight: 700;
+  margin: 50px 30px 30px 0;
+  line-height: 45px;
+  font-size: min(37px, 2.4vw);
+}
+.room-solution .content .details {
+  margin-right: 30px;
+  line-height: 25px;
+  color: var(--text);
+  font-size: min(16px, 3.5vw);
+}
+.video-wrapper {
+  height: 640px;
+  max-width: 66%;
+  position: relative;
+}
+video {
+  height: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .room-solution {
+    flex-direction: column;
+    padding: 18px 0;
+  }
+  .room-solution .content {
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: none;
+    width: 95%;
+    padding: 16px 32px;
+    word-break: keep-all;
+    height: fit-content;
+    margin: auto;
+  }
+  .room-solution .content .title {
+    margin: 16px 0 16px 0;
+    line-height: 45px;
+    font-size: 16px;
+  }
+  .room-solution .video-wrapper {
+    max-width: 100%;
+    right: 0;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .room-solution .content {
+    top: 16px;
+  }
+  .room-solution .video-wrapper {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 565px){
+  .room-solution .content {
+      top: 50px;
+  }
+}

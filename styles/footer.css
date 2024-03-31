@@ -1,0 +1,152 @@
+footer {
+  background-color: var(--blue);
+  color: var(--inverse);
+  min-height: 415px; 
+  padding: 60px 0 10px 0;
+  margin-top: 60px;
+}
+footer .container {
+  flex-wrap: wrap;
+}
+footer .container>div {
+  width: 20%;
+}
+footer .container>div a {
+  font-size: 14px;
+  margin-bottom: 15px;
+  display: block;
+  color: var(--inverse);
+}
+footer .container>div a:hover {
+  text-decoration: underline;
+}
+footer .container>div h4 {
+  margin-bottom: 35px;
+  position: relative;
+  padding-top: 5px;
+  position: relative;
+}
+footer .container>div h4::after {
+  content: '';
+  position: absolute;
+  left: 2px;
+  bottom: -10px;
+  width: 33px;
+  height: 2px;
+  background-color: var(--inverse);
+}
+footer .container>div:first-child p {
+  font-size: 14px;
+}
+footer .container>div:first-child a {
+  color: var(--inverse);
+  font-weight: bold;
+  margin-top: 30px;
+  font-size: 14px;
+}
+footer .links {
+  flex-direction: column;
+}
+footer svg{
+    width: 150px;
+    height: 50px;
+}
+footer .container .social-media-links a {
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 3px;
+  margin-right: 10px;
+  background-color: var(--inverse);
+  color: var(--blue);
+}
+footer .container>div.copy-rights {
+  width: 100%;
+  padding-top: 25px;
+  margin-top: 25px;
+  border-top: 1px solid var(--gray);
+  font-size: 14px;
+}
+footer .container>div.copy-rights a {
+  color: var(--inverse);
+}
+footer .container>div.copy-rights a:nth-child(1) {
+  border-right: 2px solid var(--inverse);
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  footer .container {
+    max-width:100%;
+    padding: 20px 0;
+    margin: 0;
+    padding-bottom: 30px;
+  }
+  footer .container {
+    flex-direction: column;
+  }
+  footer .container>div {
+    width: 100%;
+  }
+  footer .container>div h4 {
+    border-top: 1px solid var(--gray); 
+    padding-top: 40px;
+    margin: 0;
+  }
+  footer .container>div label+div {
+    display: none;
+  }
+  #open-section-1:checked~div,
+  #open-section-2:checked~div,
+  #open-section-3:checked~div,
+  #open-section-4:checked~div {
+    display: block;
+  }
+  footer .container>div h4::after {
+    content: "\f078";
+    position: absolute;
+    top: 25px;
+    left: 95%;
+    font-family: FontAwesome;
+    width:0;
+  }
+  footer .links {
+    flex-direction: row;
+  }
+  footer .container>div h4,
+  footer .container>div div{
+    padding: 25px;
+  }
+  footer .container>div:first-child {
+    padding: 0px;
+  }
+  footer .container>div:first-child div{
+    padding: 0 25px 25px;
+  }
+  footer .container>div.copy-rights {
+    border-top: 0;
+  }
+  footer .container .social-media-links{
+    border-top: 1px solid var(--gray);
+  }
+  footer .container .social-media-links a {
+    display: inline-block;
+    padding: 15px 20px;
+    margin-right: 15px;
+  }
+  footer .social-media-links a i {
+    font-size: 16px;
+  }
+  footer .container>div.copy-rights{
+    flex-direction: column-reverse;
+    padding-top: 0;
+    margin-top: 0;
+    padding-left: 25px;
+  }
+  .container .copy-rights {
+    padding-top: 0;
+  }
+  .container .copy-rights>div {
+    padding: 0;
+  }
+}

@@ -1,0 +1,17 @@
+.products {
+    margin-top: 100px;
+    height: 250px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)),
+    url("../assets/images/boiler-room.jpg");
+    background-size: cover;
+}
+.products p {
+    color: var(--inverse);
+}
+
+@media screen and (max-width: 1024px) {
+  .products {
+    margin-top: 30px;
+    height: 100px;
+  }
+}

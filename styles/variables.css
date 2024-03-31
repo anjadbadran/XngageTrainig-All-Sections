@@ -1,0 +1,15 @@
+:root {
+  --blue: #003150;
+  --blue-opacity90: #00315090;
+  --gray: #82786f;
+  --red: #aa272f;
+  --text: #1f1f1f;
+  --inverse: #ffffff;
+  --bg-color: #d7d3c7;
+  --bg-color-opacity50: #d7d3c750;
+  --purble: #53284f;
+  --purble-opacity50: #53284f50;
+  --blue-2: #455F80;
+  --blue-2-opacity50: #455F8050;
+  --blue-3: #D3DEE4;
+}

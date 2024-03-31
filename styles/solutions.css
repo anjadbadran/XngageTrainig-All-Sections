@@ -1,0 +1,96 @@
+
+.solutions {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+.solutions .content {
+  margin-bottom: 65px;
+}
+.solutions .content.row-reverse img {
+  margin-right: 50px;
+}
+.solutions h1 {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 50px;
+}
+.solutions h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.solutions .details {
+  margin-top: 100px;
+  width: 40%;
+  padding-right: 50px;
+}
+.solutions .description {
+  font-size: min(16px, 5vw);
+  color: var(--text);
+  line-height: 25px;
+  margin-bottom: 50px;
+}
+.solutions img {
+  width: 60%;
+}
+.solutions .rentals, 
+.solutions .custom-solution {
+  font-size: min(16px,3vw);
+  color: var(--gray);
+}
+.solutions  .rentals::after,
+.solutions .custom-solution::after {
+  content: "";
+  position: absolute;
+  width: 36.8px;
+  height: 2px;
+  background-color: var(--gray);
+  left: 0;
+  top: 25px;
+}
+.solutions a {
+  font-size: min(20px, 5vw);
+  color: var(--blue);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+  .solutions .details {
+    margin-top: 20px;
+    padding-right: 8px;
+  }
+  .solutions .description {
+    margin-bottom: 10px;
+  }
+  .solutions img {
+    max-height: 400px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .solutions .content,
+  .solutions .content:last-child {
+    flex-direction: column;
+  }
+  .solutions h1 {
+    margin-bottom: 32px;
+  }
+  .solutions .details {
+    margin-top: 100px;
+    width: 100%;
+    padding-right: 0;
+    margin: auto;
+  }
+  .solutions h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  .solutions .description {
+    margin-bottom: 20px;
+  }
+  .solutions img {
+    width: 100%;
+    margin: auto;
+    height: 320px;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,68 @@
+.discover-more {
+    margin-top: 150px;
+}
+.discover-more .content {
+    margin-top: 50px;
+}
+.discover-more .item {
+    width: 48%;;
+    color: var(--inverse);
+}
+.discover-more .item h2 {
+    color: var(--inverse);
+    font-weight: 500;
+    margin-top: 80px;
+}
+
+.discover-more .item:nth-child(1) {
+    background-color: var(--purble);
+}
+.discover-more .item:nth-child(2) {
+    background-color: var(--blue-2);
+}
+.discover-more .item .description {
+    line-height: 25px;
+    font-size: 14px;
+}
+.discover-more .products-backgroundg-img {
+  width: 50%;
+  background-image: url('../assets/images/products.png');
+  background-size: cover;
+}
+.discover-more .boilerhouse-backgroundg-img {
+    width: 50%;
+    background-image: url('../assets/images/boiler-house.png');
+    background-size: cover;
+}
+.discover-more .details {
+  width: 50%;
+  padding: 40px 30px 100px;
+}
+.discover-more span {
+  letter-spacing: 1.5px
+}
+.discover-more .details p {
+  padding: 20px 0;
+}
+.discover-more a {
+  color: var(--inverse);
+}
+.discover-more a:hover {
+  text-decoration: underline;
+}
+.discover-more a:hover i {
+  transform: translateX(5px);
+}
+.discover-more a i {
+  transition: transform 1s;
+}
+
+@media screen and (max-width: 1024px) {
+  .discover-more .content {
+    flex-direction: column;
+  }
+  .discover-more .item {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
