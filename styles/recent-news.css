@@ -65,31 +65,14 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 576px) {
 
-  .recent-news .view-all-news  {
-    margin-bottom: 0;
-  }
-  .recent-news .carosel {
-    flex-direction: column;
-  }
   .recent-news .content {
-    max-width: 90%;
-    margin: auto;
-    margin-bottom: 50px;
+    max-width: 100%;
+    /* margin-bottom: 50px; */
   }
-  .recent-news img {
-    margin: 8px 0;
-  }
-  .recent-news button.previous,
-  .recent-news button.next {
-    display: none;
-  } 
-  .recent-news .view-all-news {
+  .recent-news .carosel .content:not(:nth-child(1)) {
     display: none;
   }
-  .recent-news .carosel .content:not(:nth-child(-1n+2)) {
-    display: block;
-  }
-
+  
 }
