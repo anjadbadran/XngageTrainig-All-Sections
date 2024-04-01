@@ -96,26 +96,8 @@
     .recently-viewed-products .content:not(:nth-child(1)) {
       display: none;
     }
-
-    /* .recently-viewed-products .carosel {
-      flex-direction: column;
-    }
-    .recently-viewed-products .content {
-      width:90%;
-      margin: 0 auto 50px auto;
-    }
     .recently-viewed-products img {
-      width: 70%;
-      height: 75%;
+      max-width: 70%;
+      margin: 50px 0 100px 50px;
     }
-    .recently-viewed-products .img-wrapper {
-      height: 70%;
-    }
-    .recently-viewed-products button.previous,
-    .recently-viewed-products button.next {
-      display: none;
-    } 
-    .recently-viewed-products .content:not(:nth-child(-1n+2)) {
-      display: block;
-    } */
   }
